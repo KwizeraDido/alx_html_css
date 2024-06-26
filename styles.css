@@ -1,0 +1,28 @@
+body{
+    background-color: #06141b;
+    display: flex;
+    color: rgb(32, 64, 92);
+}
+main{
+    color:  #9ba8ab;
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+article{
+    background-color:rgb(168, 156, 156);
+    color: rgb(18, 20, 20);
+    flex: 2;
+    overflow-y: auto;
+}
+aside{
+    color: rgb(80, 102, 231);
+    flex: 1;
+    overflow-y: auto;
+}
+header a{
+color: #9ba8ab;
+}
+footer{
+    color:  #9ba8ab;
+}
