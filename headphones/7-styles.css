@@ -1,0 +1,347 @@
+/* Global Styles */
+body {
+  background-image: url("img/headphones_hero_1.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+header {
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 40px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header ul li {
+  display: inline;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin: 290px auto 26px;
+  color: #fff;
+  max-width: 1000px;
+}
+.hero h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.centered-paragraph {
+  width: 637px;
+  text-align: center;
+  padding: 20px;
+}
+
+.centered-paragraph p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 40px;
+}
+
+.hero button {
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 18px;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.hero-content button:hover {
+  background-color: #d03;
+}
+
+/* What We Do Section */
+.what-we-do {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.what-we-do p {
+  font-size: 16px;
+  color: #071629;
+  margin-bottom: 2rem;
+  line-height: 26px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.service {
+  width: 250px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.service img {
+  width: 25%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service h3 {
+  margin: 1rem 0;
+  color: #071629;
+}
+
+.service p {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #071629;
+}
+
+/* Service Hover Effect */
+.service:hover {
+  transform: scale(1.1) rotate(5deg);
+  opacity: 0.8;
+}
+
+/* Results Section */
+.results {
+  background: url('img/headphones_hero_2.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 6rem;
+  position: relative;
+}
+
+.results::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darken overlay */
+  z-index: 1;
+}
+
+.results h2, .results p {
+  position: relative;
+  z-index: 2;
+}
+
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.results p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 2rem;
+}
+
+.result-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.result-card {
+  background: url('img/pentagone.png') no-repeat center center/cover;
+  width: 130.9px;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  position: relative;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.result-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.result-card h3, .result-card p {
+  position: relative;
+  z-index: 2;
+}
+
+.result-card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.result-card p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+/* Result Card Hover Effect */
+.result-card:hover {
+  transform: scale(1.1) rotate(-5deg);
+  opacity: 0.8;
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid #979797;
+  background: none;
+  font-size: 1rem;
+  color: #000;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border-bottom-color: #000;
+  outline: none;
+}
+
+.contact form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact form button {
+  background-color: #FF6565;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 18px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.contact form button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background-color: #09152b;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.footer-logo {
+  margin: 1rem;
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.social-icons {
+  margin: 1rem;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #ccc;
+}
+
+footer p {
+  text-align: center;
+  opacity: 35.17%;
+  font-size: 12px;
+  margin-top: 3rem; /* Adjust as needed to create space from the content above */
+}
